@@ -6,15 +6,15 @@ threadsafe: true
 
 handlers:
 - url: /_gh/.*
-  script: gae.application
+  script: gae.py
   secure: optional
 
 - url: /favicon.ico
-  script: gae.application
+  script: gae.py
   secure: optional
 
 - url: /.*
-  script: legacy.application
+  script: legacy.py
   secure: optional
 
 libraries:
